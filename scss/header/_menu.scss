@@ -13,12 +13,21 @@
     }
   }
   .sub-menu {
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
-    transition: height 0.3s linear;
+    transition: max-height 0.3s linear;
   }
   .arrow {
     width: 10px;
     fill: white;
+    transition: all 0.3s linear;
+  }
+  .sub-menu-opened {
+    .sub-menu {
+      max-height: 200px;
+    }
+    .arrow {
+      transform: rotate(-180deg);
+    }
   }
 }
