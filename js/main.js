@@ -12,13 +12,12 @@ Array.from(menuButtons).forEach(function(item) {
 
 //DROPDOWN MENU
 document.getElementById('menu-button').addEventListener('click', function() {
-    let subMenuHeight = document.getElementById('header_menu').clientHeight+'px';
-    console.log(subMenuHeight)
     let menu = document.getElementById('menu-container');
-    if(!menu.style.maxHeight) {
-        menu.style.maxHeight = subMenuHeight;
-    }
-    if(menu.style.maxHeight === subMenuHeight) {
+    menu.classList.toggle('open');
+    if(menu.classList.contains('open')) {
+        let menuHeight = document.getElementById('header_menu').clientHeight+'px';
+        menu.style.maxHeight = menuHeight;
+    } else {
         menu.style.maxHeight = '0px';
     }
     
