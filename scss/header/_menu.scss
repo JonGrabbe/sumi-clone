@@ -1,0 +1,15 @@
+.header_menu {
+  color: white;
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem;
+  }
+  .arrow {
+    width: 10px;
+    fill: white;
+  }
+}
