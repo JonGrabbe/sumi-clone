@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 2px;
+  overflow: hidden;
+  //border for testing
+  //border: 1px solid lime;
   .line {
     background-color: $color-secondary;
     width: 100%;
