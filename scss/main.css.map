@@ -8,7 +8,8 @@
         "global/_colors.scss",
         "header/_header.scss",
         "header/_menu-btn.scss",
-        "header/_menu-top.scss"
+        "header/_menu-top.scss",
+        "header/_menu.scss"
     ],
     "names": [],
     "file": "main.css"
