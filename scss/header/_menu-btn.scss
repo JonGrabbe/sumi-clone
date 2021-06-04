@@ -1,25 +1,32 @@
 .menu-btn {
   width: 26px;
-  height: 18px;
+  height: 19px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   .line {
     background-color: $color-secondary;
     width: 100%;
-    // height: 3px;
-    height: 10%;
-  }
-  .line1 {
-    top: 0;
-    left: 0;
+    height: 2px;
+    transition: all 0.3s ease-in;
+    transform-origin: top left;
+    border: 0;
   }
   .line2 {
-    top: 40%;
-    left: 0;
+    opacity: 1;
   }
-  .line3 {
-    bottom: 0;
-    left: 0;
+  &.opened {
+    $deg: 43.5deg;
+    .line1 {
+      transform: rotate($deg);
+    }
+    .line2 {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    .line3 {
+      transform: rotate(-$deg);
+      transform-origin: bottom left;
+    }
   }
 }

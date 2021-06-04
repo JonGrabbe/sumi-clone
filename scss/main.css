@@ -11,7 +11,7 @@ button {
 
 .menu-btn {
   width: 26px;
-  height: 18px;
+  height: 19px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,22 +20,28 @@ button {
 .menu-btn .line {
   background-color: #e44c2a;
   width: 100%;
-  height: 10%;
-}
-
-.menu-btn .line1 {
-  top: 0;
-  left: 0;
+  height: 2px;
+  transition: all 0.3s ease-in;
+  transform-origin: top left;
+  border: 0;
 }
 
 .menu-btn .line2 {
-  top: 40%;
-  left: 0;
+  opacity: 1;
 }
 
-.menu-btn .line3 {
-  bottom: 0;
-  left: 0;
+.menu-btn.opened .line1 {
+  transform: rotate(43.5deg);
+}
+
+.menu-btn.opened .line2 {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.menu-btn.opened .line3 {
+  transform: rotate(-43.5deg);
+  transform-origin: bottom left;
 }
 
 .header_top {
