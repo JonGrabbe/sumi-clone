@@ -71,6 +71,20 @@ button {
   padding: 1rem;
 }
 
+.header_menu li li .menu-item {
+  padding-left: 2rem;
+}
+
+.header_menu .sub-menu {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s linear;
+}
+
+.header_menu .sub-menu.open {
+  height: 100px;
+}
+
 .header_menu .arrow {
   width: 10px;
   fill: white;

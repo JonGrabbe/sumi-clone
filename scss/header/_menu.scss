@@ -1,12 +1,24 @@
 .header_menu {
   color: white;
-
   .menu-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     padding: 1rem;
+  }
+  li li {
+    .menu-item {
+      padding-left: 2rem;
+    }
+  }
+  .sub-menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+    &.open {
+      height: 100px;
+    }
   }
   .arrow {
     width: 10px;
