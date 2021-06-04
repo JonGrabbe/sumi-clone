@@ -11,12 +11,18 @@ Array.from(menuButtons).forEach(function(item) {
 
 
 //DROPDOWN MENU
+function openMenu(menu) {
+    setTimeout(function() {
+        menu.style.maxHeight = 'none';
+    }, 300)
+}
 document.getElementById('menu-button').addEventListener('click', function() {
     let menu = document.getElementById('menu-container');
     menu.classList.toggle('open');
     if(menu.classList.contains('open')) {
         let menuHeight = document.getElementById('header_menu').clientHeight+'px';
         menu.style.maxHeight = menuHeight;
+        // openMenu(menu)
     } else {
         menu.style.maxHeight = '0px';
     }
