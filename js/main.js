@@ -17,13 +17,13 @@ Array.from(document.getElementsByClassName('header_menu')).forEach(function(item
     Array.from(childrenElments).forEach(function(item) {
         if(item.tagName === 'LI') {
             item.addEventListener('click', function() {
-                let sumMenu;
-                Array.from(item.children).forEach(function(item) {
-                    if(item.classList.contains('sub-menu')) {
-                        console.log(item)
-                        item.classList.toggle('open')
-                    }
-                })
+                // Array.from(item.children).forEach(function(item) {
+                //     if(item.classList.contains('sub-menu')) {
+                //         console.log(item)
+                //         item.classList.toggle('open')
+                //     }
+                // })
+                this.classList.toggle('sub-menu-opened');
             })
         }
     })

@@ -16,12 +16,18 @@
     height: 0;
     overflow: hidden;
     transition: height 0.3s linear;
-    &.open {
-      height: 100px;
-    }
   }
   .arrow {
     width: 10px;
     fill: white;
+    transition: all 0.3s linear;
+  }
+  .sub-menu-opened {
+    .sub-menu {
+      height: 100px;
+    }
+    .arrow {
+      transform: rotate(-180deg);
+    }
   }
 }
