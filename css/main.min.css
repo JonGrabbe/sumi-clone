@@ -1,0 +1,2 @@
+.menu-btn-svg{width:25px}.menu-btn-svg:hover{cursor:pointer}.menu-btn-svg .line{transition:all 0.3s ease-in}.menu-btn-svg .line2{opacity:1}.menu-btn-svg.opened .line1{transform:rotate(45deg)}.menu-btn-svg.opened .line2{transform:translateX(100%);opacity:0}.menu-btn-svg.opened .line3{transform:rotate(-45deg)}.header_top{display:flex;justify-content:space-between;align-items:center}
+/*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,32 @@
+.menu-btn-svg {
+  width: 25px;
+  &:hover {
+    cursor: pointer;
+  }
+  .line {
+    transition: all 0.3s ease-in;
+  }
+  .line1 {
+    // transform-origin: 0 113px;
+  }
+  .line2 {
+    // transform-origin: center left;
+    opacity: 1;
+  }
+  .line3 {
+    // transform-origin: 113px 0;
+    // transform-origin: bottom left;
+  }
+  &.opened {
+    .line1 {
+      transform: rotate(45deg);
+    }
+    .line2 {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    .line3 {
+      transform: rotate(-45deg);
+    }
+  }
+}
