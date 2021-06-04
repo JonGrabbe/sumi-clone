@@ -17,13 +17,19 @@ Array.from(document.getElementsByClassName('header_menu')).forEach(function(item
     Array.from(childrenElments).forEach(function(item) {
         if(item.tagName === 'LI') {
             item.addEventListener('click', function() {
-                // Array.from(item.children).forEach(function(item) {
-                //     if(item.classList.contains('sub-menu')) {
-                //         console.log(item)
-                //         item.classList.toggle('open')
-                //     }
-                // })
-                this.classList.toggle('sub-menu-opened');
+                let sumMenu;
+                Array.from(item.children).forEach(function(item) {
+                    if(item.classList.contains('sub-menu')) {
+                        //console.log(item)
+                        // if(item.style.maxHeight === '0') {
+                        //     item.style.maxHeight = 'none';
+                        // } else {
+                        //     item.style.maxHeight = '0';
+                        // }
+                        console.log(item.clientHeight)
+                        item.style.maxHeight = 'none';
+                    }
+                })
             })
         }
     })
