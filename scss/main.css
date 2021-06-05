@@ -26,6 +26,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #565656;
   font-weight: 400;
+  font-size: 13px;
 }
 
 .menu-btn {
@@ -127,33 +128,43 @@ body {
   }
   .header_menu {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
     color: black;
   }
   .header_menu .menu-item {
     background-color: white;
     border: none;
   }
+  .header_menu .menu-item .menu-item {
+    padding: 0;
+  }
   .header_menu li {
+    margin-right: 1rem;
     position: relative;
+  }
+  .header_menu li:last-child {
+    margin-right: 0;
   }
   .header_menu li:hover .sub-menu {
     visibility: visible;
     opacity: 1;
-    top: 90%;
+    top: 100%;
   }
   .header_menu .sub-menu {
     visibility: hidden;
     opacity: 0;
     position: absolute;
+    z-index: 100;
     top: 150%;
     left: 0;
     max-height: initial;
-    min-width: 500px;
-    transition: all 0.3s linear;
+    min-width: 200px;
+    transition-property: top, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
     color: white;
-    padding: 1rem;
+    padding: 0;
   }
   .header_menu .sub-menu,
   .header_menu .sub-menu .menu-item {

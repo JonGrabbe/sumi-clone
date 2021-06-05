@@ -11,6 +11,8 @@ Array.from(menuButtons).forEach(function(item) {
 
 
 //DROPDOWN MENU
+let responsive = window.matchMedia('min-width: 800px');
+
 function openMenu(menu, height) {
     menu.style.maxHeight = height;    
     setTimeout(function() {
@@ -21,6 +23,9 @@ function closeMenu(menu, height) {
     menu.style.maxHeight = '0px';
 }
 document.getElementById('menu-button').addEventListener('click', function() {
+    if(responsive.matches) {
+        return
+    }
     let menu = document.getElementById('menu-container');
     menu.classList.toggle('open');
     if(menu.classList.contains('open')) {
@@ -45,6 +50,9 @@ function subtractNewHeight(height) {
 }
 
 Array.from(document.getElementsByClassName('header_menu')).forEach(function(item) {
+    if(responsive.matches) {
+        return
+    }
     let childrenElments = item.children;
     Array.from(childrenElments).forEach(function(item) {
         if(item.tagName === 'LI') {           
