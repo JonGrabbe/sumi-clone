@@ -110,14 +110,6 @@ body {
   transform: rotate(-180deg);
 }
 
-.header_menu .sub-menu-opened .sub-menu {
-  max-height: 200px;
-}
-
-.header_menu .sub-menu-opened .arrow {
-  transform: rotate(-180deg);
-}
-
 .hide-at-mobile {
   display: none;
 }
@@ -128,6 +120,20 @@ body {
   }
   .header_top {
     display: none;
+  }
+  .menu-container {
+    max-height: none;
+    overflow: initial;
+  }
+  .header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+  }
+  .header_menu .menu-item {
+    background-color: white;
+    border: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

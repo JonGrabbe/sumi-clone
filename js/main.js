@@ -25,6 +25,7 @@ document.getElementById('menu-button').addEventListener('click', function() {
     menu.classList.toggle('open');
     if(menu.classList.contains('open')) {
         let menuHeight = document.getElementById('header_menu').clientHeight+'px';
+        console.log(menuHeight)
         menu.style.maxHeight = menuHeight;
     } else {
         menu.style.maxHeight = '0px';

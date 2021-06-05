@@ -13,4 +13,18 @@
   .header_top {
     display: none;
   }
+  .menu-container {
+    max-height: none;
+    overflow: initial;
+  }
+  .header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    .menu-item {
+      background-color: white;
+      border: none;
+    }
+  }
 }
