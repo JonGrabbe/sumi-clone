@@ -1,3 +1,16 @@
+@import "breakpoints";
 @import "menu-btn";
 @import "menu-top";
 @import "menu";
+
+.hide-at-mobile {
+  display: none;
+}
+@include header-tablet {
+  .hide-at-mobile {
+    display: initial;
+  }
+  .header_top {
+    display: none;
+  }
+}

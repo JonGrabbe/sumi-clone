@@ -117,4 +117,17 @@ body {
 .header_menu .sub-menu-opened .arrow {
   transform: rotate(-180deg);
 }
+
+.hide-at-mobile {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .hide-at-mobile {
+    display: initial;
+  }
+  .header_top {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
