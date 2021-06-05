@@ -98,6 +98,10 @@ a {
   transition: all 0.3s linear;
 }
 
+.header_menu .arrow-rotate .arrow {
+  transform: rotate(-180deg);
+}
+
 .header_menu .sub-menu-opened .sub-menu {
   max-height: 200px;
 }

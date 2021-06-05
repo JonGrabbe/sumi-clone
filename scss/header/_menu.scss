@@ -27,6 +27,11 @@
     fill: white;
     transition: all 0.3s linear;
   }
+  .arrow-rotate {
+    .arrow {
+      transform: rotate(-180deg);
+    }
+  }
   .sub-menu-opened {
     .sub-menu {
       max-height: 200px;
