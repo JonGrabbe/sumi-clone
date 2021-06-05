@@ -9,8 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #333333;
     padding: 1rem;
+    border-top: 1px solid rgba(150, 150, 150, 0.15);
   }
   li li {
     .menu-item {
