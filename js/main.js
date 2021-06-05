@@ -25,11 +25,9 @@ document.getElementById('menu-button').addEventListener('click', function() {
     menu.classList.toggle('open');
     if(menu.classList.contains('open')) {
         let menuHeight = document.getElementById('header_menu').clientHeight+'px';
-        //menu.style.maxHeight = menuHeight;
-        openMenu(menu, menuHeight);
+        menu.style.maxHeight = menuHeight;
     } else {
         menu.style.maxHeight = '0px';
-        // closeMenu(menu, menuHeight);
     }
 })
 
@@ -45,8 +43,8 @@ Array.from(document.getElementsByClassName('header_menu')).forEach(function(item
     Array.from(childrenElments).forEach(function(item) {
         if(item.tagName === 'LI') {           
             item.addEventListener('click', function() {
-                updateMaxHeight()
                 this.classList.toggle('sub-menu-opened');
+                updateMaxHeight()
             })
         }
     })
